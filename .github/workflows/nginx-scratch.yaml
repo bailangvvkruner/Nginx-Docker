@@ -12,7 +12,12 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on:
+      # ubuntu-latest
+      - self-hosted
+      - linux
+      - x64
 
     steps:
       - name: Check Server Performance(检查服务器性能)
