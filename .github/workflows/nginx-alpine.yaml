@@ -27,12 +27,13 @@ env:
 jobs:
   build-and-push:
     name: Build, push, and scan Alpine image
-    runs-on: |
-      ubuntu-latest
-      # - self-hosted
-      # - linux
-      # - x64
+    # runs-on: |
+    #   # ubuntu-latest
+    #   # - self-hosted
+    #   # - linux
+    #   # - x64
     # timeout-minutes: 360
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
